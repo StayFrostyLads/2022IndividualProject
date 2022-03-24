@@ -6,7 +6,7 @@ import javax.swing.*;
 
 
 public class Fourier extends JFrame {
-	private JPanel cards, title, information, background, pi, zelda, amongus, naruto;
+	private JPanel cards, title, information, pi, zelda, amongus, naruto;
 	CardLayout cL = new CardLayout();
 	
 	public Fourier() {
@@ -20,18 +20,15 @@ public class Fourier extends JFrame {
 		cards = new JPanel(cL);
 		title = new TitlePanel();
 		information = new InformationPanel();
-		background = new BackgroundPanel();
 		pi = new PiPanel();
 		zelda = new ZeldaPanel();
 		naruto = new NarutoPanel();
 		amongus = new AmongUsPanel();
 		
 		cards.setFocusable(true);
-		background.setFocusable(true);
 		
 		cards.add(title, "title");
 		cards.add(information, "information");
-		cards.add(background, "background");
 		cards.add(pi, "pi");
 		cards.add(naruto, "naruto");
 		cards.add(zelda, "zelda");
@@ -79,16 +76,6 @@ public class Fourier extends JFrame {
 		InformationPanel.quit.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				System.exit(0);
-			}
-		});
-		BackgroundPanel.quit.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				System.exit(0);
-			}
-		});
-		BackgroundPanel.title.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				cL.show(cards,  "title");
 			}
 		});
 		ZeldaPanel.home.addActionListener(new ActionListener() {
