@@ -3,10 +3,17 @@ package panel;
 import javax.swing.*;
 import java.awt.*;
 
+/*
+ * Class for creating GUI specifics for the Information Panel that contains information about Fourier Series with a visual aid.
+ * 
+ * @author Jack Nebeker
+ * @version 1.0.0
+ * @since 2022-03-23
+ * 
+ */
 public class InformationPanel extends JPanel {
 	public static JButton home, quit;
-	private JLabel title, sawtooth, semicircle, triangle, square;
-	public static JSlider sawslider, semislider, trislider, sqslider;
+	private JLabel title;
 	
 	public InformationPanel() {
 		setLayout(null);
@@ -14,43 +21,14 @@ public class InformationPanel extends JPanel {
 		title.setBounds(325,20,200,100);
 		add(title);
 		
-		sawtooth = new JLabel("saw");
-		sawtooth.setBounds(100,200,200,200);
-		add(sawtooth);
-		
-		semicircle = new JLabel("semi");
-		semicircle.setBounds(400,200,200,200);
-		add(semicircle);
-		
-		triangle = new JLabel("tri");
-		triangle.setBounds(100,500,200,200);
-		add(triangle);
-		
-		square = new JLabel("sq");
-		square.setBounds(400,500,200,200);
-		add(square);
-		
-		home = new JButton("Home");
+		home = new JButton("Back to Home");
+		home.setBounds(250,600,300,50);
 		add(home);
 		
 		quit = new JButton("Exit Application");
 		quit.setBounds(620,20,150,50);
 		add(quit);
 		
-		sawslider = new JSlider(0, 100, 1);
-		sawslider.setBounds(200,210,0,0);
-		add(sawslider);
-		
-		semislider = new JSlider(0, 100, 1);
-		semislider.setBounds(500,210,0,0);
-		add(semislider);
-		
-		trislider = new JSlider(0, 100, 1);
-		trislider.setBounds(200,710,0,0);
-		add(trislider);
-		
-		sqslider = new JSlider(0, 100, 1);
-		sqslider.setBounds(500,710,0,0);
 	}
 
 }
