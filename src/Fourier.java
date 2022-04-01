@@ -4,7 +4,15 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 
-
+/*
+ * Main class in which all of the GUI ActionListeners are added.
+ * Class also functions as a setup for CardLayout.
+ * 
+ * @author Jack Nebeker
+ * @version 1.0.0
+ * @since 2022-03-23
+ * 
+ */
 public class Fourier extends JFrame {
 	private JPanel cards, title, information, pi, zelda, amongus, naruto;
 	CardLayout cL = new CardLayout();
@@ -121,10 +129,18 @@ public class Fourier extends JFrame {
 		
 	}
 	
+	/*
+	 * Method for rotating through the different CardLayout JPanels
+	 */
 	private void showScreen(String a) {
 		cL.show(cards, a);
 	}
 	
+	/*
+	 * Main method
+	 * @param String
+	 * @return null
+	 */
 	public static void main(String[] args) {
 		Fourier series = new Fourier();
 	}
