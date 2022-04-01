@@ -1,11 +1,10 @@
-# 2022 Individual Project
+# Jack Nebeker's 2022 Individual Project
+Jack Nebeker [Email])(mailto:thejacknebeker@gmail.com)
 
-Description
+### Drawing Fourier Series For You!
+Images Drawn using Fourier Series via a Fourier Transform Method
 
-Todo: include logo or graphic
-
-## Documentation
-
+[!Image of Zelda Triforce Symbol](
 
 
 
