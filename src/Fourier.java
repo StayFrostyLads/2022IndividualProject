@@ -131,6 +131,8 @@ public class Fourier extends JFrame {
 	
 	/*
 	 * Method for rotating through the different CardLayout JPanels
+	 * @param String
+	 * @return null
 	 */
 	private void showScreen(String a) {
 		cL.show(cards, a);
